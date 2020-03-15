@@ -8,15 +8,14 @@ import org.springframework.stereotype.Service;
 import com.nepal.AngularSpringMVC.model.Employee;
 import com.nepal.AngularSpringMVC.repository.EmployeeRepository;
 
-
 @Service
 public class EmployeeService {
-	
+
 	@Autowired
 	EmployeeRepository employeeRepository;
-	
-	public List<Employee> getAllEmployees(){
-		return employeeRepository.getAllEmployeesFromDb();
+
+	public List<Employee> getAllEmployees() {
+		return employeeRepository.findAll();
 	}
 
 }

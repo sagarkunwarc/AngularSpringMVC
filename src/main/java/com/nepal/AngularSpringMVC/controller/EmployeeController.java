@@ -15,11 +15,11 @@ import com.nepal.AngularSpringMVC.service.EmployeeService;
 public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
-	
-	@CrossOrigin(origins ="http://localhost:4200")
-	@RequestMapping(value = "/getemployees",method = RequestMethod.GET)
-	public List<Employee> getAllEmployees(){
+
+	@CrossOrigin(origins = "http://localhost:4200")
+	@RequestMapping(value = "/getemployees", method = RequestMethod.GET)
+	public List<Employee> getAllEmployees() {
 		return employeeService.getAllEmployees();
 	}
-	
+
 }
